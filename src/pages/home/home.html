@@ -1,0 +1,21 @@
+
+
+<ion-content padding center text-center>
+  <ion-title>FoodTruck</ion-title>
+
+  <img src="/assets/imgs/Food_logo.png"/>
+ <ion-list>
+  <ion-item>
+      <ion-label color="primary">Usuario</ion-label>
+    <!--Hacemos referencia a la variable username de home.ts-->
+    <ion-input placeholder="Username" [(ngModel)]="username"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label color="primary">Contraseña</ion-label>
+    <!--Hacemos referencia a la variable password de home.ts-->
+    <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+ </ion-list>
+ <button ion-button full (click)="login()">Iniciar Sesión</button> <!-- Botón iniciar sesion,funcion login() -->
+ <button ion-button full color="dark" (click)="registrarse()">Regístrate</button> <!--Boton registrarse,funcion goregistrate()-->
+</ion-content>
